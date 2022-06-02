@@ -1,14 +1,18 @@
 package com.app.testRightstep.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
 public class Rectangle extends Figure {
 
+    @Column
     private Double side1;
 
+    @Column
     private Double side2;
 
+    @Column
     private Double diagonal;
 
     public Rectangle() {

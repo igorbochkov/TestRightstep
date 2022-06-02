@@ -1,20 +1,23 @@
 package com.app.testRightstep.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
 public class Triangle extends Figure {
 
+    @Column
     private Double foot;
 
+    @Column
     private Double height;
 
     public Triangle() {
     }
 
-    public Triangle(Color color, Double side, Double height) {
+    public Triangle(Color color, Double foot, Double height) {
         super(color);
-        this.foot = side;
+        this.foot = foot;
         this.height = height;
         setPerimeter(calculatePerimeter());
         setArea(calculateArea());

@@ -13,8 +13,10 @@ public abstract class Figure {
     @Enumerated(EnumType.STRING)
     private Color color;
 
+    @Column
     private Double area;
 
+    @Column
     private Double perimeter;
 
     public Figure() {

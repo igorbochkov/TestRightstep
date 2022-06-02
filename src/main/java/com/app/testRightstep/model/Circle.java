@@ -1,10 +1,12 @@
 package com.app.testRightstep.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity
 public class Circle extends Figure {
 
+    @Column
     private Double radius;
 
     public Circle() {
